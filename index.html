@@ -132,15 +132,17 @@
 
       <div class="modal__methods">
 
-        <button class="payment-method" data-copy="@Makari-Garrett" aria-label="Copy Venmo handle">
+        <!-- Venmo: opens app/website directly -->
+        <a class="payment-method" href="https://venmo.com/u/Makari-Garrett" target="_blank" rel="noopener noreferrer" aria-label="Send via Venmo">
           <span class="payment-method__icon payment-method__icon--venmo">V</span>
           <div class="payment-method__info">
             <span class="payment-method__name">Venmo</span>
             <span class="payment-method__handle">@Makari-Garrett</span>
           </div>
-          <span class="payment-method__action">Copy</span>
-        </button>
+          <span class="payment-method__action">Open</span>
+        </a>
 
+        <!-- Zelle: no payment link exists — copy to clipboard -->
         <button class="payment-method" data-copy="Melvin.blakey00@gmail.com" aria-label="Copy Zelle address">
           <span class="payment-method__icon payment-method__icon--zelle">Z</span>
           <div class="payment-method__info">
@@ -150,15 +152,17 @@
           <span class="payment-method__action">Copy</span>
         </button>
 
-        <button class="payment-method" data-copy="$moneymel1111" aria-label="Copy Cash App tag">
+        <!-- Cash App: opens app/website directly -->
+        <a class="payment-method" href="https://cash.app/$moneymel1111" target="_blank" rel="noopener noreferrer" aria-label="Send via Cash App">
           <span class="payment-method__icon payment-method__icon--cashapp">$</span>
           <div class="payment-method__info">
             <span class="payment-method__name">Cash App</span>
             <span class="payment-method__handle">$moneymel1111</span>
           </div>
-          <span class="payment-method__action">Copy</span>
-        </button>
+          <span class="payment-method__action">Open</span>
+        </a>
 
+        <!-- Apple Pay: no payment link exists — copy phone number -->
         <button class="payment-method" data-copy="502-939-1044" aria-label="Copy Apple Pay number">
           <span class="payment-method__icon payment-method__icon--applepay">&#63743;</span>
           <div class="payment-method__info">

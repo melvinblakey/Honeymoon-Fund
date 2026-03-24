@@ -34,14 +34,14 @@ document.addEventListener('keydown', (e) => {
   }
 });
 
-// ── Click-to-copy ──────────────────────────────
+// ── Click-to-copy (Zelle & Apple Pay only) ──────────────
 const toast      = document.getElementById('toast');
 let   toastTimer = null;
 
-document.querySelectorAll('.payment-method').forEach((btn) => {
+// Only attach copy handlers to buttons with data-copy (not <a> link methods)
+document.querySelectorAll('button.payment-method[data-copy]').forEach((btn) => {
   btn.addEventListener('click', () => {
-    const text = btn.dataset.copy;
-    copyText(text);
+    copyText(btn.dataset.copy);
   });
 });
 
