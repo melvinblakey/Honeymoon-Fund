@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Melvin & Makari's Honeymoon Fund — Help us celebrate our Tokyo adventure.">
+  <title>Melvin & Makari — Honeymoon Fund</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ── HERO ── -->
+  <section class="hero">
+    <div class="hero__inner fade-in">
+      <p class="hero__eyebrow">TOGETHER, WE BEGIN FOREVER</p>
+      <h1 class="hero__names">Melvin <span class="amp">&amp;</span> Makari</h1>
+      <div class="hero__divider"></div>
+      <p class="hero__subtitle">Our Honeymoon Fund</p>
+      <p class="hero__quote">&ldquo;In lieu of gifts, we&rsquo;d love your help sending us on the adventure of a lifetime.&rdquo;</p>
+    </div>
+  </section>
+
+  <!-- ── OUR STORY ── -->
+  <section class="section story" id="story">
+    <div class="container">
+      <div class="section__header fade-in">
+        <p class="section__label">OUR STORY</p>
+        <h2 class="section__title">How It All Began</h2>
+        <div class="section__rule"></div>
+      </div>
+      <div class="story__body fade-in">
+        <p>We met in high school and somehow just knew. What started as young love grew into something deeper with every year &mdash; ten years of learning each other, growing together, and building a life side by side.</p>
+        <p>Through late-night conversations, shared dreams, and a thousand small moments that added up to something extraordinary, we found home in each other. Now we&rsquo;re ready to make it official and celebrate the beginning of forever.</p>
+        <p class="story__sig">&mdash; Melvin &amp; Makari</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── GALLERY ── -->
+  <section class="section gallery" id="moments">
+    <div class="container">
+      <div class="section__header fade-in">
+        <p class="section__label">MOMENTS TOGETHER</p>
+        <h2 class="section__title">A Few of Our Favorites</h2>
+        <div class="section__rule"></div>
+      </div>
+      <div class="gallery__grid fade-in">
+        <!-- Replace images/photo1.jpg with your photo -->
+        <div class="gallery__item">
+          <img src="images/photo1.jpg" alt="Melvin and Makari" loading="lazy">
+        </div>
+        <!-- Replace images/photo2.jpg with your photo -->
+        <div class="gallery__item">
+          <img src="images/photo2.jpg" alt="Melvin and Makari" loading="lazy">
+        </div>
+        <!-- Replace images/photo3.jpg with your photo -->
+        <div class="gallery__item">
+          <img src="images/photo3.jpg" alt="Melvin and Makari" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TOKYO DESTINATION ── -->
+  <section class="section destination" id="honeymoon">
+    <div class="destination__kanji" aria-hidden="true">東京</div>
+    <div class="container destination__inner">
+      <div class="section__header fade-in">
+        <p class="section__label section__label--light">THE HONEYMOON</p>
+        <h2 class="section__title section__title--light">Tokyo, Japan</h2>
+        <div class="section__rule section__rule--gold"></div>
+      </div>
+      <p class="destination__desc fade-in">
+        We&rsquo;ve always dreamed of exploring Tokyo together &mdash; the energy, the culture, the food,
+        and the unforgettable moments waiting around every corner. Your generous gifts will help make this dream a reality.
+      </p>
+      <div class="destination__cards">
+        <div class="destination__card fade-in">
+          <span class="destination__card-icon">⛩️</span>
+          <h3>Temples &amp; Shrines</h3>
+          <p>Quiet moments of wonder at Meiji Shrine, Senso-ji, and hidden gardens throughout the city.</p>
+        </div>
+        <div class="destination__card fade-in">
+          <span class="destination__card-icon">🍣</span>
+          <h3>Culinary Adventures</h3>
+          <p>From Tsukiji&rsquo;s freshest sushi to late-night ramen in Golden Gai &mdash; we plan to eat our way through Tokyo.</p>
+        </div>
+        <div class="destination__card fade-in">
+          <span class="destination__card-icon">🌸</span>
+          <h3>City &amp; Culture</h3>
+          <p>Shibuya crossings, Harajuku strolls, teamLab exhibits, and rooftop views of the skyline at night.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FUND CTA ── -->
+  <section class="section fund" id="fund">
+    <div class="container">
+      <div class="section__header fade-in">
+        <p class="section__label">HONEYMOON FUND</p>
+        <h2 class="section__title">Help Us Get There</h2>
+        <div class="section__rule"></div>
+      </div>
+      <p class="fund__desc fade-in">
+        We have everything we need in each other. In place of traditional gifts, we&rsquo;d be so grateful
+        for a contribution toward our Tokyo honeymoon &mdash; every gift brings us one step closer to this
+        once&#8209;in&#8209;a&#8209;lifetime adventure.
+      </p>
+      <div class="fund__cta fade-in">
+        <button class="btn btn--primary" id="openModal">CONTRIBUTE TO OUR TRIP</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <p class="footer__names">Melvin &amp; Makari</p>
+    <p class="footer__tagline">THANK YOU FOR BEING PART OF OUR STORY</p>
+  </footer>
+
+  <!-- ── PAYMENT MODAL ── -->
+  <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal">
+      <button class="modal__close" id="closeModal" aria-label="Close">&times;</button>
+      <p class="modal__eyebrow">SEND A GIFT</p>
+      <h2 class="modal__title" id="modalTitle">Choose a Payment Method</h2>
+      <p class="modal__note">Every contribution means the world to us</p>
+
+      <div class="modal__methods">
+
+        <button class="payment-method" data-copy="@Makari-Garrett" aria-label="Copy Venmo handle">
+          <span class="payment-method__icon payment-method__icon--venmo">V</span>
+          <div class="payment-method__info">
+            <span class="payment-method__name">Venmo</span>
+            <span class="payment-method__handle">@Makari-Garrett</span>
+          </div>
+          <span class="payment-method__action">Copy</span>
+        </button>
+
+        <button class="payment-method" data-copy="Melvin.blakey00@gmail.com" aria-label="Copy Zelle address">
+          <span class="payment-method__icon payment-method__icon--zelle">Z</span>
+          <div class="payment-method__info">
+            <span class="payment-method__name">Zelle</span>
+            <span class="payment-method__handle">Melvin.blakey00@gmail.com</span>
+          </div>
+          <span class="payment-method__action">Copy</span>
+        </button>
+
+        <button class="payment-method" data-copy="$moneymel1111" aria-label="Copy Cash App tag">
+          <span class="payment-method__icon payment-method__icon--cashapp">$</span>
+          <div class="payment-method__info">
+            <span class="payment-method__name">Cash App</span>
+            <span class="payment-method__handle">$moneymel1111</span>
+          </div>
+          <span class="payment-method__action">Copy</span>
+        </button>
+
+        <button class="payment-method" data-copy="502-939-1044" aria-label="Copy Apple Pay number">
+          <span class="payment-method__icon payment-method__icon--applepay">&#63743;</span>
+          <div class="payment-method__info">
+            <span class="payment-method__name">Apple Pay</span>
+            <span class="payment-method__handle">502-939-1044</span>
+          </div>
+          <span class="payment-method__action">Copy</span>
+        </button>
+
+      </div>
+
+      <p class="modal__footer">Thank you for celebrating with us and helping make our Tokyo dream come true!</p>
+    </div>
+  </div>
+
+  <!-- ── TOAST ── -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
