@@ -254,6 +254,10 @@ img {
   transition: transform 0.6s var(--ease-out);
 }
 
+.gallery__item--contain img {
+  object-fit: contain;
+}
+
 .gallery__item:hover img {
   transform: scale(1.04);
 }
